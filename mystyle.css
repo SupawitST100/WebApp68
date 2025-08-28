@@ -20,11 +20,14 @@ nav{
     font-size: 20px;
 }
 h1{
-    color: black;
+    color: aqua;
     text-align: left;
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
+    border-bottom:solid aqua;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 h2,h3,h4{
     color: black;
@@ -32,4 +35,5 @@ h2,h3,h4{
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
+
 }

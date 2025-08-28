@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.fullscreen-box {
+  background: orange;
+  width: 80%;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.fullscreen-box:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  color: #fff;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 2em;
+}
+</style>
+</head>
+<body>
+    <p style="font-style: italic;">
+  Click the button below to enter the element into fullscreen mode.
+</p>
+<div id="myBox" class="fullscreen-box">
+  <button onclick="enterFullscreen()">Go Fullscreen</button>
+</div>
+<script>
+function enterFullscreen() {
+  const el = document.getElementById('myBox');
+  if (el.requestFullscreen) {
+    el.requestFullscreen();
+  } else if (el.webkitRequestFullscreen) { // Safari
+    el.webkitRequestFullscreen();
+  } else if (el.msRequestFullscreen) { // IE11
+    el.msRequestFullscreen();
+  }
+}
+</script>
+    <a href="./hw.html"><input type="submit" value="Main menu"></a>
+
+</body>
+</html>

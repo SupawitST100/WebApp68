@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.scroll-snap-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 8px;
+  padding: 8px 0;
+  background: #fff;
+  border-radius: 10px;
+  width: 600px; /* ปรับขนาดตามต้องการ */
+  margin: 20px auto;
+}
+.scroll-snap-container img {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  background: #eee;
+};
+</style>
+</head>
+<body>
+    <div class="scroll-snap-container">
+  <img src="./1.jpg" alt="flower1" />
+  <img src="./2.jpg" alt="flower2" />
+  <img src="./3.jpg" alt="flower3" />
+  <img src="./4.jpg" alt="flower4" />
+  <img src="./5.jpg" alt="flower5" />
+</div>
+    <a href="./hw.html"><input type="submit" value="Main menu"></a>
+
+</body>
+</html>
+
