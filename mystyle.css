@@ -1,0 +1,35 @@
+img{
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 50%;
+}
+aside{
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+nav{
+    float: right;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+h1{
+    color: black;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+h2,h3,h4{
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
